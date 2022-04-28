@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }
 
+.text-view {
+  color: white;
+  font-size: 1.5rem;
+  border-width: 0px;
+}
 .conteiner {
   background-color: bisque;
-  height: 100vh;
   max-width: 1200px;
+  min-height: 100vh;
   margin: 0 auto;
 }
 
@@ -22,6 +27,7 @@
   grid-area: header;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   min-height: 200px;
 }
 
@@ -40,18 +46,24 @@
  
 }
 
-.btn {
+.nav-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 10px;
+  width: 100px;
+  height: 50px;
   border-radius: 50px;
-  color: white;
+  border: 0px;
   background-color: rgba(6, 196, 6, 0.618);
-  font-size: 1.5rem;
-  border-width: 0px;
+  transition-property: transform,background-color,color;
+  transition-duration: 2000ms;
+  
+}
 
-
+.nav-btn:hover {
+  transform: scale(1.2);
+  background-color: rgba(216, 235, 11, 0.618);
+  color:rgba(0, 0, 0, 0.618);
 }
 
 .main {
@@ -65,16 +77,26 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap:10px;
-  padding-bottom: 40px; 
+  padding: 40px;
+  
 }
 
 .main-elem {
-  width: 200px;
-  height: 200px;
+  width: 17%;
+  min-width: 100px;
+  height: 150px;
   background-color: rgb(160, 14, 222);
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-property: transform;
+  transition-duration: 3000ms;
+  animation-play-state: paused;
+  margin: 5px 0;
+}
+
+.main-elem:hover {
+  transform: rotate(180deg);
 }
 
 .ball {
@@ -82,4 +104,56 @@
   height: 50px;
   background-color: aqua;
   border-radius: 50%;
+}
+
+@keyframes jumping-ball {
+  0%{
+    
+  }
+
+  10%{
+    
+  }
+
+  20%{
+    
+  }
+
+  30%{
+    
+  }
+
+  40%{
+    
+  }
+
+  50%{
+    
+  }
+
+  60%{
+    
+  }
+
+  70%{
+    
+  }
+
+  80%{
+    
+  }
+
+  90%{
+    
+  }
+
+  100%{
+    
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header>h1 {
+    font-size: 1.5rem;
+  }
 }
