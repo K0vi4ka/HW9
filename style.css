@@ -77,7 +77,6 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap:10px;
-  padding: 40px;
   
 }
 
@@ -92,63 +91,91 @@
   transition-property: transform;
   transition-duration: 3000ms;
   animation-play-state: paused;
-  margin: 5px 0;
+  animation-timing-function: ; 
 }
 
 .main-elem:hover {
   transform: rotate(180deg);
 }
 
-.ball {
-  width: 50px;
-  height: 50px;
-  background-color: aqua;
-  border-radius: 50%;
+.ball-wrapper {
+  max-width: 1200px;
+  min-height: 200px;
+  position: relative;
 }
+
+.ball {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(23, 229, 229);
+  border-radius: 50%;
+  position : relative;
+  animation: jumping-ball;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+
+.ball:hover {
+  animation-play-state: paused;
+}
+
 
 @keyframes jumping-ball {
   0%{
-    
+    left: 0%;
+    top: 0px;
+    background-color: rgb(23, 229, 229);
   }
 
-  10%{
-    
-  }
-
-  20%{
-    
+   20%{
+    left: 20%;
+    top: 100px;
+    background-color: rgb(136, 164, 106);
   }
 
   30%{
-    
+    left: 30%;
+    top: 0px;
+    background-color: rgb(121, 56, 114);
   }
 
   40%{
-    
+    left: 40%;
+    top: 100px;
+    background-color: rgb(0, 255, 208);
   }
 
   50%{
-    
+    left: 50%;
+    top: 0px;
+    background-color: rgb(97, 5, 246);
   }
 
   60%{
-    
+    left: 60%;
+    top: 100px;
+    background-color: rgb(236, 10, 29);
   }
 
   70%{
-    
+    left: 70%;
+    top: 00px;
+    background-color: rgb(23, 229, 50);
   }
 
   80%{
-    
-  }
-
-  90%{
-    
+    left: 80%;
+    top: 100px;
+    background-color: rgb(229, 184, 23);
   }
 
   100%{
-    
+    left: 95%;
+    top: 0px;
+    background-color: rgb(226, 23, 229);
   }
 }
 
@@ -156,4 +183,5 @@
   .header>h1 {
     font-size: 1.5rem;
   }
+
 }
