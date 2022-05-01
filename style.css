@@ -9,6 +9,7 @@
   font-size: 1.5rem;
   border-width: 0px;
 }
+
 .conteiner {
   background-color: bisque;
   max-width: 1200px;
@@ -57,7 +58,6 @@
   background-color: rgba(6, 196, 6, 0.618);
   transition-property: transform,background-color,color;
   transition-duration: 2000ms;
-  
 }
 
 .nav-btn:hover {
@@ -91,7 +91,7 @@
   transition-property: transform;
   transition-duration: 3000ms;
   animation-play-state: paused;
-  animation-timing-function: ; 
+ 
 }
 
 .main-elem:hover {
@@ -124,55 +124,55 @@
 
 
 @keyframes jumping-ball {
-  0%{
+  0% {
     left: 0%;
     top: 0px;
     background-color: rgb(23, 229, 229);
   }
 
-   20%{
+   20% {
     left: 20%;
     top: 100px;
     background-color: rgb(136, 164, 106);
   }
 
-  30%{
+  30% {
     left: 30%;
     top: 0px;
     background-color: rgb(121, 56, 114);
   }
 
-  40%{
+  40% {
     left: 40%;
     top: 100px;
     background-color: rgb(0, 255, 208);
   }
 
-  50%{
+  50% {
     left: 50%;
     top: 0px;
     background-color: rgb(97, 5, 246);
   }
 
-  60%{
+  60% {
     left: 60%;
     top: 100px;
     background-color: rgb(236, 10, 29);
   }
 
-  70%{
+  70% {
     left: 70%;
     top: 00px;
     background-color: rgb(23, 229, 50);
   }
 
-  80%{
+  80% {
     left: 80%;
     top: 100px;
     background-color: rgb(229, 184, 23);
   }
 
-  100%{
+  100% {
     left: 95%;
     top: 0px;
     background-color: rgb(226, 23, 229);
@@ -183,5 +183,4 @@
   .header>h1 {
     font-size: 1.5rem;
   }
-
 }
