@@ -126,8 +126,14 @@
 @keyframes jumping-ball {
   0% {
     left: 0%;
-    top: 0px;
+    top: 50px;
     background-color: rgb(23, 229, 229);
+  }
+
+  10% {
+    left: 10%;
+    top: 0;
+    background-color: rgb(59, 91, 0);
   }
 
    20% {
@@ -172,9 +178,15 @@
     background-color: rgb(229, 184, 23);
   }
 
-  100% {
-    left: 95%;
+  90% {
+    left: 90%;
     top: 0px;
+    background-color: rgb(103, 150, 163);
+  }
+
+  100% {
+    left: 97%;
+    top: 50px;
     background-color: rgb(226, 23, 229);
   }
 }
